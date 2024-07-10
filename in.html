@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admission Form - B.Sc Part-II</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+    .container {
+      max-width: 800px;
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .required::after {
+      content: " *";
+      color: red;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container mt-5">
+    <h2 class="text-center">SRI KRISHNA MAHILA COLLEGE</h2>
+    <h4 class="text-center">ADMISSION FORM - B.Sc PART - II</h4>
+    <p class="text-center">SESSION 2023-24</p>
+    <form>
+      <!-- Personal Details -->
+      <h5 class="mb-3">Personal Details</h5>
+      <div class="mb-3">
+        <label for="studentName" class="form-label required">Student's Name</label>
+        <input type="text" class="form-control" id="studentName" placeholder="Enter your name" required>
+      </div>
+      <div class="mb-3">
+        <label for="fathersName" class="form-label required">Father's Name</label>
+        <input type="text" class="form-control" id="fathersName" placeholder="Enter father's name" required>
+      </div>
+      <div class="mb-3">
+        <label for="mothersName" class="form-label required">Mother's Name</label>
+        <input type="text" class="form-control" id="mothersName" placeholder="Enter mother's name" required>
+      </div>
+      <div class="mb-3">
+        <label for="guardiansName" class="form-label required">Guardian's Name</label>
+        <input type="text" class="form-control" id="guardiansName" placeholder="Enter guardian's name" required>
+      </div>
+      <div class="mb-3">
+        <label for="registrationNo" class="form-label required">Registration No</label>
+        <input type="text" class="form-control" id="registrationNo" placeholder="Enter registration number" required>
+      </div>
+      <div class="mb-3">
+        <label for="emailId" class="form-label required">Email Id</label>
+        <input type="email" class="form-control" id="emailId" placeholder="Enter email" required>
+      </div>
+      <div class="mb-3">
+        <label for="dob" class="form-label required">Date of Birth</label>
+        <input type="date" class="form-control" id="dob" required>
+      </div>
+      <div class="mb-3">
+        <label for="gender" class="form-label required">Gender</label>
+        <select class="form-select" id="gender" required>
+          <option selected disabled>Select gender</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div class="mb-3">
+        <label for="religion" class="form-label required">Religion</label>
+        <input type="text" class="form-control" id="religion" placeholder="Enter religion" required>
+      </div>
+      <div class="mb-3">
+        <label for="category" class="form-label required">Category</label>
+        <input type="text" class="form-control" id="category" placeholder="Enter category" required>
+      </div>
+      <div class="mb-3">
+        <label for="bloodGroup" class="form-label required">Blood Group</label>
+        <input type="text" class="form-control" id="bloodGroup" placeholder="Enter blood group" required>
+      </div>
+      <div class="mb-3">
+        <label for="aadhaarNo" class="form-label required">Applicant Aadhaar No</label>
+        <input type="text" class="form-control" id="aadhaarNo" placeholder="Enter Aadhaar number" required>
+      </div>
+      <div class="mb-3">
+        <label for="physicallyChallenged" class="form-label required">Physically Challenged</label>
+        <select class="form-select" id="physicallyChallenged" required>
+          <option selected disabled>Select an option</option>
+          <option value="yes">Yes</option>
+          <option value="no">No</option>
+        </select>
+      </div>
+      <div class="mb-3">
+        <label for="mobileNo" class="form-label required">Mobile No</label>
+        <input type="text" class="form-control" id="mobileNo" placeholder="Enter mobile number" required>
+      </div>
+      <div class="mb-3">
+        <label for="applicantId" class="form-label required">Applicant's Id</label>
+        <input type="text" class="form-control" id="applicantId" placeholder="Enter applicant ID" required>
+      </div>
+      <div class="mb-3">
+        <label for="annualIncome" class="form-label required">Family Annual Income</label>
+        <input type="text" class="form-control" id="annualIncome" placeholder="Enter annual income" required>
+      </div>
+      <div class="mb-3">
+        <label for="caste" class="form-label required">Caste</label>
+        <input type="text" class="form-control" id="caste" placeholder="Enter caste" required>
+      </div>
+      <div class="mb-3">
+        <label for="maritalStatus" class="form-label required">Marital Status</label>
+        <input type="text" class="form-control" id="maritalStatus" placeholder="Enter marital status" required>
+      </div>
+      <div class="mb-3">
+        <label for="whatsappNo" class="form-label required">WhatsApp Number</label>
+        <input type="text" class="form-control" id="whatsappNo" placeholder="Enter WhatsApp number" required>
+      </div>
+
+      <!-- Address for Correspondence -->
+      <h5 class="mt-4">Address for Correspondence</h5>
+      <div class="mb-3">
+        <label for="address" class="form-label required">Address</label>
+        <input type="text" class="form-control" id="address" placeholder="Enter address" required>
+      </div>
+      <div class="mb-3">
+        <label for="policeStation" class="form-label required">Police Station</label>
+        <input type="text" class="form-control" id="policeStation" placeholder="Enter police station" required>
+      </div>
+      <div class="mb-3">
+        <label for="district" class="form-label required">District</label>
+        <input type="text" class="form-control" id="district" placeholder="Enter district" required>
+      </div>
+      <div class="mb-3">
+        <label for="state" class="form-label required">State</label>
+        <input type="text" class="form-control" id="state" placeholder="Enter state" required>
+      </div>
+      <div class="mb-3">
+        <label for="pincode" class="form-label required">PIN Code</label>
+        <input type="text" class="form-control" id="pincode" placeholder="Enter PIN code" required>
+      </div>
+
+      <!-- Course Details -->
+      <h5 class="mt-4">Course Details</h5>
+      <div class="mb-3">
+        <label for="honsSubject" class="form-label required">Hons. Subjects</label>
+        <input type="text" class="form-control" id="honsSubject" placeholder="Enter Hons. subjects" required>
+      </div>
+      <div class="mb-3">
+        <label for="subsidiarySubject1" class="form-label required">Subsidiary Subject 1</label>
+        <input type="text" class="form-control" id="subsidiarySubject1" placeholder="Enter Subsidiary Subject 1" required>
+      </div>
+      <div class="mb-3">
+        <label for="subsidiarySubject2" class="form-label required">Subsidiary Subject 2</label>
+        <input type="text" class="form-control" id="subsidiarySubject2" placeholder="Enter Subsidiary Subject 2" required>
+      </div>
+      <div class="mb-3">
+        <label for="composition" class="form-label required">Composition</label>
+        <input type="text" class="form-control" id="composition" placeholder="Enter composition" required>
+      </div>
+      <div class="mb-3">
+        <label for="part1Subjects" class="form-label required">Subjects in Part-I</label>
+        <input type="text" class="form-control" id="part1Subjects" placeholder="Enter subjects in Part-I" required>
+      </div>
+
+      <!-- Education Qualification -->
+      <h5 class="mt-4">Educational Qualification</h5>
+      <div class="mb-3">
+        <label for="examPassed" class="form-label required">Examination Passed</label>
+        <input type="text" class="form-control" id="examPassed" placeholder="Enter examination passed" required>
+      </div>
+      <div class="mb-3">
+        <label for="examBoard" class="form-label required">Exam. Board</label>
+        <input type="text" class="form-control" id="examBoard" placeholder="Enter exam board" required>
+      </div>
+      <div class="mb-3">
+        <label for="year" class="form-label required">Year</label>
+        <input type="text" class="form-control" id="year" placeholder="Enter year" required>
+      </div>
+      <div class="mb-3">
+        <label for="result" class="form-label required">Result</label>
+        <input type="text" class="form-control" id="result" placeholder="Enter result" required>
+      </div>
+      <div class="mb-3">
+        <label for="obtainedMarks" class="form-label required">Obtained Marks/Gr.</label>
+        <input type="text" class="form-control" id="obtainedMarks" placeholder="Enter obtained marks/grade" required>
+      </div>
+      <div class="mb-3">
+        <label for="fullMarks" class="form-label required">Full Marks/Gr.</label>
+        <input type="text" class="form-control" id="fullMarks" placeholder="Enter full marks/grade" required>
+      </div>
+      <div class="mb-3">
+        <label for="obtainedPercentage" class="form-label required">Obtained %</label>
+        <input type="text" class="form-control" id="obtainedPercentage" placeholder="Enter obtained percentage" required>
+      </div>
+      <div class="mb-3">
+        <label for="classRollNo" class="form-label required">Class. Roll No. Part-I</label>
+        <input type="text" class="form-control" id="classRollNo" placeholder="Enter class roll number" required>
+      </div>
+
+      <h5 class="mt-4">Upload Documents</h5>
+      <div class="mb-3">
+        <label for="uploadPhoto" class="form-label">01. Upload Photo <span class="text-danger">*</span></label>
+        <input type="file" class="form-control" id="uploadPhoto" required>
+      </div>
+      <div class="mb-3">
+        <label for="uploadSignature" class="form-label">02. Upload Signature <span class="text-danger">*</span></label>
+        <input type="file" class="form-control" id="uploadSignature" required>
+      </div>
+      <div class="mb-3">
+        <label for="uploadCLC" class="form-label">03. Upload CLC <span class="text-danger">*</span></label>
+        <input type="file" class="form-control" id="uploadCLC" required>
+      </div>
+      <div class="mb-3">
+        <label for="uploadMarksheet" class="form-label">04. Upload Marksheet <span class="text-danger">*</span></label>
+        <input type="file" class="form-control" id="uploadMarksheet" required>
+      </div>
+      <div class="mb-3">
+        <label for="uploadOnlineList" class="form-label">05. Upload Online List <span class="text-danger">*</span></label>
+        <input type="file" class="form-control" id="uploadOnlineList" required>
+      </div>
+
+
+      <!-- Declaration -->
+      <div class="form-check mb-3">
+        <input type="checkbox" class="form-check-input" id="declaration" required>
+        <label class="form-check-label required" for="declaration">I declare that all the information provided is true to the best of my knowledge. Any discrepancy may result in cancellation of my admission.</label>
+      </div>
+      <button type="submit" class="btn btn-primary mt-3">Submit</button>
+    </form>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+</body>
+</html>
